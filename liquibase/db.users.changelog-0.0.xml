@@ -1,0 +1,29 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="ardipatengko@gmail.com" id="users-0.0">
+        <createTable tableName="JWT_USERS">
+            <column name="ID" type="VARCHAR(50)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="FIRST_NAME" type="VARCHAR(50)"/>
+            <column name="LAST_NAME" type="VARCHAR(50)"/>
+            <column name="USER_NAME" type="VARCHAR(50)" />
+            <column name="PASS_WORD" type="VARCHAR(50)" />
+            <column name="EMAIL" type="VARCHAR(50)" />
+
+            <column name="CREATED_BY" type="VARCHAR(100)" />
+            <column name="CREATED_DATE" type="datetime" />
+            <column name="MODIFIED_BY" type="VARCHAR(100)" />
+            <column name="MODIFIED_DATE" type="datetime" />
+        </createTable>
+    </changeSet>
+
+    <changeSet author="ardipatengko@gmail.com" id="users-0.1">
+        <loadData encoding="UTF-8" file="liquibase/data/users-data-0.0.csv"
+                  quotchar='"' separator=","
+                  tableName="JWT_USERS">
+        </loadData>
+    </changeSet>
+</databaseChangeLog>
