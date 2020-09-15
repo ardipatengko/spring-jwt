@@ -6,3 +6,5 @@ fixing
 new-feature
 always-master
 proper-feature
+proper-feature
+add feature
