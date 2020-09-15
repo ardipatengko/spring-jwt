@@ -8,3 +8,8 @@ always-master
 proper-feature
 proper-feature
 add feature
+more feature
+more more feature
+feature new
+another commit
+my fixing
