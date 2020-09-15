@@ -5,3 +5,4 @@ forgot
 fixing
 new-feature
 always-master
+proper-feature
