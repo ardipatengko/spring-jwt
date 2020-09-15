@@ -4,4 +4,6 @@ test3
 forgot
 fixing
 new-feature
+always-master
 proper-feature
+proper-feature-fixing
